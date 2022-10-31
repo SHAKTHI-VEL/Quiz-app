@@ -18,8 +18,8 @@ public class Login extends JFrame implements ActionListener{
         image.setBounds(0, 0, 600, 500);
         add(image);
         
-        JLabel heading = new JLabel("Simple Minds");
-        heading.setBounds(750, 60, 300, 45);
+        JLabel heading = new JLabel("DS BUZZ");
+        heading.setBounds(750, 60, 700, 45);
         heading.setFont(new Font("Viner Hand ITC", Font.BOLD, 40));
         heading.setForeground(new Color(30, 144, 254));
         add(heading);
@@ -35,7 +35,7 @@ public class Login extends JFrame implements ActionListener{
         tfname.setFont(new Font("Times New Roman", Font.BOLD, 20));
         add(tfname);
         
-        rules = new JButton("Rules");
+        rules = new JButton("NEXT");
         rules.setBounds(735, 270, 120, 25);
         rules.setBackground(new Color(30, 144, 254));
         rules.setForeground(Color.WHITE);
@@ -55,13 +55,30 @@ public class Login extends JFrame implements ActionListener{
     }
     
     public void actionPerformed(ActionEvent ae) {
+         JFrame frame = new JFrame("Swing Tester");
         if (ae.getSource() == rules) {
             String name = tfname.getText();
+              
+               
+             if(name.length()!=0){
             setVisible(false);
             new Rules(name);
-        } else if (ae.getSource() == back) {
+             }
+             
+             else{
+                 
+//                    JOptionPane.showMessageDialog(frame, "Name cannot be null", "Inane warning");
+
+JOptionPane.showMessageDialog(frame,
+    "Name cannot be empty",
+    "Inane warning",
+    JOptionPane.WARNING_MESSAGE);
+             }
+        } 
+        else if (ae.getSource() == back) {
             setVisible(false);
         }
+      
     }
     
     public static void main(String[] args) {

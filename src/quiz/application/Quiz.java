@@ -42,76 +42,76 @@ public class Quiz extends JFrame implements ActionListener {
         question.setFont(new Font("Tahoma", Font.PLAIN, 24));
         add(question);
         
-        questions[0][0] = "Which is used to find and fix bugs in the Java programs.?";
-        questions[0][1] = "JVM";
-        questions[0][2] = "JDB";
-        questions[0][3] = "JDK";
-        questions[0][4] = "JRE";
+        questions[0][0] ="How is an array initialized in C language?";
+        questions[0][1] = "int a[3]={1,2,3}";
+        questions[0][2] = "int a={1,2,3}";
+        questions[0][3] = "int a[]=new int[3]";
+        questions[0][4] = "int a(3)=[1,2,3]";
 
-        questions[1][0] = "What is the return type of the hashCode() method in the Object class?";
-        questions[1][1] = "int";
-        questions[1][2] = "Object";
-        questions[1][3] = "long";
-        questions[1][4] = "void";
+        questions[1][0] = "Which of the following is a linear data structure?";
+        questions[1][1] = "Array";
+        questions[1][2] = "AVL Trees";
+        questions[1][3] = "Binary Trees";
+        questions[1][4] = "Graphs";
 
-        questions[2][0] = "Which package contains the Random class?";
-        questions[2][1] = "java.util package";
-        questions[2][2] = "java.lang package";
-        questions[2][3] = "java.awt package";
-        questions[2][4] = "java.io package";
+        questions[2][0] = "Which of the following is not the type of queue?";
+        questions[2][1] = "priority queue";
+        questions[2][2] = "single ended queue";
+        questions[2][3] = "circular queue";
+        questions[2][4] = "simple queue";
 
-        questions[3][0] = "An interface with no fields or methods is known as?";
-        questions[3][1] = "Runnable Interface";
-        questions[3][2] = "Abstract Interface";
-        questions[3][3] = "Marker Interface";
-        questions[3][4] = "CharSequence Interface";
+        questions[3][0] ="What is the disadvantage of array data structure?" ;
+        questions[3][1] = "The amount of memory to be allocated should be known beforehand";
+        questions[3][2] = "Elements of an array can be accessed in constant time";
+        questions[3][3] = "Elements are stored in contigous memory blocks";
+        questions[3][4] = "Other data structure can be implemented using arrays";
 
-        questions[4][0] = "In which memory a String is stored, when we create a string using new operator?";
-        questions[4][1] = "Stack";
-        questions[4][2] = "String memory";
-        questions[4][3] = "Random storage space";
-        questions[4][4] = "Heap memory";
+        questions[4][0] = "Which of the following is advantage of the array data structure?";
+        questions[4][1] = "Elements of mixed data types can be stored";
+        questions[4][2] = "Easier to access the elements in an array";
+        questions[4][3] = "Index of the first element starts from 1";
+        questions[4][4] = "Elements of an array cannot be stored";
 
-        questions[5][0] = "Which of the following is a marker interface?";
-        questions[5][1] = "Runnable interface";
-        questions[5][2] = "Remote interface";
-        questions[5][3] = "Readable interface";
-        questions[5][4] = "Result interface";
+        questions[5][0] ="What function is used to append a character at the back of a string in C++?";
+        questions[5][1] = "push_back()";
+        questions[5][2] = "append";
+        questions[5][3] = "push()";
+        questions[5][4] = "insert()";
 
-        questions[6][0] = "Which keyword is used for accessing the features of a package?";
-        questions[6][1] = "import";
-        questions[6][2] = "package";
-        questions[6][3] = "extends";
-        questions[6][4] = "export";
+        questions[6][0] = "Which one of the following is an application of queue data structure";
+        questions[6][1] = "When a resource is shared among multiple consumers";
+        questions[6][2] = "When data is transferred asynchronously";
+        questions[6][3] = "Load Balancing";
+        questions[6][4] = "All of the above";
 
-        questions[7][0] = "In java, jar stands for?";
-        questions[7][1] = "Java Archive Runner";
-        questions[7][2] = "Java Archive";
-        questions[7][3] = "Java Application Resource";
-        questions[7][4] = "Java Application Runner";
+        questions[7][0] = "When a pop() operation is called on an empty queue, what is the condition called?";
+        questions[7][1] = "Overflow";
+        questions[7][2] = "Underflow";
+        questions[7][3] = "Syntax error";
+        questions[7][4] = "Garbage value";
 
-        questions[8][0] = "Which of the following is a mutable class in java?";
-        questions[8][1] = "java.lang.StringBuilder";
-        questions[8][2] = "java.lang.Short";
-        questions[8][3] = "java.lang.Byte";
-        questions[8][4] = "java.lang.String";
+        questions[8][0] = "Which of the following data structure allow insertion and deletion from both ends?";
+        questions[8][1] = "Stack";
+        questions[8][2] = "Deque";
+        questions[8][3] = "Queue";
+        questions[8][4] = "Strings";
 
-        questions[9][0] = "Which of the following option leads to the portability and security of Java?";
-        questions[9][1] = "Bytecode is executed by JVM";
-        questions[9][2] = "The applet makes the Java code secure and portable";
-        questions[9][3] = "Use of exception handling";
-        questions[9][4] = "Dynamic binding between objects";
+        questions[9][0] = "Which of the following is a Divide and Conquer algorithm?";
+        questions[9][1] = "Bubble Sort";
+        questions[9][2] = "Selection Sort";
+        questions[9][3] = "Heap Sort";
+        questions[9][4] = "Merge Sort";
         
-        answers[0][1] = "JDB";
-        answers[1][1] = "int";
-        answers[2][1] = "java.util package";
-        answers[3][1] = "Marker Interface";
-        answers[4][1] = "Heap memory";
-        answers[5][1] = "Remote interface";
-        answers[6][1] = "import";
-        answers[7][1] = "Java Archive";
-        answers[8][1] = "java.lang.StringBuilder";
-        answers[9][1] = "Bytecode is executed by JVM";
+        answers[0][1] = "int a[3]={1,2,3}";
+        answers[1][1] = "Array";
+        answers[2][1] = "single ended queue";
+        answers[3][1] = "The amount of memory to be allocated should be known beforehand";
+        answers[4][1] = "Easier to access the elements in an array";
+        answers[5][1] = "push_back()";
+        answers[6][1] = "All of the above";
+        answers[7][1] = "Underflow";
+        answers[8][1] = "Deque";
+        answers[9][1] = "Merge Sort";
         
         opt1 = new JRadioButton();
         opt1.setBounds(170, 520, 700, 30);
@@ -157,10 +157,10 @@ public class Quiz extends JFrame implements ActionListener {
         lifeline.setBackground(new Color(30, 144, 255));
         lifeline.setForeground(Color.WHITE);
         lifeline.addActionListener(this);
-        add(lifeline);
+//        add(lifeline);
         
         submit = new JButton("Submit");
-        submit.setBounds(1100, 710, 200, 40);
+        submit.setBounds(1100, 630, 200, 40);
         submit.setFont(new Font("Tahoma", Font.PLAIN, 22));
         submit.setBackground(new Color(30, 144, 255));
         submit.setForeground(Color.WHITE);
@@ -195,16 +195,18 @@ public class Quiz extends JFrame implements ActionListener {
             
             count++;
             start(count);
-        } else if (ae.getSource() == lifeline) {
-            if (count == 2 || count == 4 || count == 6 || count == 8 || count == 9) {
-                opt2.setEnabled(false);
-                opt3.setEnabled(false);
-            } else {
-                opt1.setEnabled(false);
-                opt4.setEnabled(false);
-            }
-            lifeline.setEnabled(false);
-        } else if (ae.getSource() == submit) {
+        }
+//        else if (ae.getSource() == lifeline) {
+//            if (count == 2 || count == 4 || count == 6 || count == 8 || count == 9) {
+//                opt2.setEnabled(false);
+//                opt3.setEnabled(false);
+//            } else {
+//                opt1.setEnabled(false);
+//                opt4.setEnabled(false);
+//            }
+//            lifeline.setEnabled(false);
+//        }
+        else if (ae.getSource() == submit) {
             ans_given = 1;
             if (groupoptions.getSelection() == null) {
                 useranswers[count][0] = "";
